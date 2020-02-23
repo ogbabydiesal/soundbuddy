@@ -1,5 +1,7 @@
 To use Sound Buddy in a group.
 
+Prerquisites: Download and Install Pure Data from https://puredata.info/. 
+
 1) Press "Clone or Download this Repo" and locate the downloaded Sound Buddy folder on your hard drive.
 Optional: Move the folder to the Desktop or a more easy to find location.
 
