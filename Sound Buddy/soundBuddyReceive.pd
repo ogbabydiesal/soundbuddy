@@ -1,0 +1,37 @@
+#N canvas 73 55 837 752 12;
+#X obj 369 279 netreceive 3001;
+#X obj 333 622 readsf~;
+#X obj 335 659 dac~;
+#X msg 331 521 start;
+#X obj 368 328 select 1 2 3;
+#X msg 159 498 stop;
+#X msg 32 68 \; pd dsp \$1;
+#X obj 28 34 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X text 55 32 Turn on/off audio;
+#X msg 677 509 open 3.wav;
+#X msg 448 506 open 1.wav;
+#X msg 557 508 open 2.wav;
+#X text 94 220 This part of the patch receives stuff from your sound
+buddy;
+#X obj 349 419 t b b;
+#X obj 415 421 t b b;
+#X obj 522 422 t b b;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 3 0 1 0;
+#X connect 4 0 13 0;
+#X connect 4 1 14 0;
+#X connect 4 2 15 0;
+#X connect 5 0 1 0;
+#X connect 7 0 6 0;
+#X connect 9 0 1 0;
+#X connect 10 0 1 0;
+#X connect 11 0 1 0;
+#X connect 13 0 3 0;
+#X connect 13 1 10 0;
+#X connect 14 0 3 0;
+#X connect 14 1 11 0;
+#X connect 15 0 3 0;
+#X connect 15 1 9 0;

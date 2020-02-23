@@ -1,0 +1,12 @@
+#N canvas 508 133 604 607 12;
+#X obj 259 394 netsend;
+#X msg 339 301 send \$1;
+#X msg 182 192 connect localhost 3001;
+#X msg 326 251 1;
+#X msg 377 249 2;
+#X msg 429 252 3;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 5 0 1 0;
